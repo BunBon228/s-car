@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Inder";
+    src: url("../fonts/Inder-Regular.ttf");
+}
+
+@font-face {
+    font-family: "DaysOne";
+    src: url("../fonts/DaysOne-Regular.ttf");
+}
+
+:root{
+
+    --lidth-color: #FFFFFF;
+    --blue-color: #1219EC;
+    --bluedark-color: #1E2096;
+    --grey-color: #5D5D5D;
+    --graydark-color: #222222; 
+
+    --big-text: 120px;
+    --semibig-text: 60px;
+    --midle-text: 40px;
+    --semimidle-text: 30px;
+    --standart-text: 20px;
+
+    --main-famile-text: "DaysOne";
+    --second-famile-text: "Inder";
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: fit-content;
+    color: var(--lidth-color);
+    font-size: var(--standart-text);
+    background-color: var(--graydark-color);
+    font-family: var(--main-famile-text);
+    font-style: normal;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: var(--lidth-color);
+}
+
+:where(h1,h2,h3,h4,h5,h6){
+    font-size: var(--standart-text);
+    font-weight: 400;
+    font-style: normal;
+}
+
+:where(ul, ol, li){
+    list-style: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 150px;
+    margin: 0 auto;
+}
